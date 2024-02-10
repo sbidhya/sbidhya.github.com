@@ -56,7 +56,16 @@ The Pitfall Consider the following scenario where we create a shared pointer to 
         }
 
     </style>
-</noscript><meta property="og:title" content="Avoid Unintentional Copying in C&#43;&#43; Containers" />
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLQ7QCF0C1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZLQ7QCF0C1');
+</script>
+<meta property="og:title" content="Avoid Unintentional Copying in C&#43;&#43; Containers" />
 <meta property="og:description" content="C&#43;&#43; default semantics often involve copying, which can sometimes lead to unintended consequences. Let&rsquo;s explore this through a practical example involving shared pointers.
 The Pitfall Consider the following scenario where we create a shared pointer to a set of strings:
 #include&lt;iostream&gt; #include&lt;set&gt; #include&lt;memory&gt; int main() { typedef std::set&lt;std::string&gt; STRINGSET; STRINGSET names = {&#34;Tom&#34;, &#34;Tim&#34;, &#34;Sam&#34;}; auto names_sptr = std::make_shared&lt;STRINGSET&gt;(names); { auto names_ptr_cpy = names_sptr; std::cout &lt;&lt; &#34;Share pointer use: &#34; &lt;&lt; names_sptr." />
