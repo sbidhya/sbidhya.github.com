@@ -125,9 +125,17 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header">
+<header class="page-header"><div class="breadcrumbs"><a href="https://sbidhya.github.io/">Home</a></div>
   <h1>
     Posts
+    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
@@ -141,8 +149,8 @@
 The Pitfall Consider the following scenario where we create a shared pointer to a set of strings:
 #include&lt;iostream&gt; #include&lt;set&gt; #include&lt;memory&gt; int main() { typedef std::set&lt;std::string&gt; STRINGSET; STRINGSET names = {&#34;Tom&#34;, &#34;Tim&#34;, &#34;Sam&#34;}; auto names_sptr = std::make_shared&lt;STRINGSET&gt;(names); { auto names_ptr_cpy = names_sptr; std::cout &lt;&lt; &#34;Share pointer use: &#34; &lt;&lt; names_sptr....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-02-09 21:41:16 -0500 EST'>February 9, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Avoid Unintentional Copying in C&#43;&#43; Containers" href="https://sbidhya.github.io/posts/article-3/"></a>
+  <footer class="entry-footer"><span title='2024-02-09 21:41:16 -0500 EST'>February 9, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;463 words</footer>
+  <a class="entry-link" aria-label="post link to Avoid Unintentional Copying in C&#43;&#43; Containers" href="https://sbidhya.github.io/posts/article-2/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -153,20 +161,8 @@ The Pitfall Consider the following scenario where we create a shared pointer to 
   <div class="entry-content">
     <p>In C&#43;&#43;, initialization and assignment are distinct operations. Through the code snippet below, we will explore these differences. While examining the code, one might initially assume that IntWrapper’s constructor and destructor are called an equal number of times. However, this is not the case. IntWrapper is initialized once (through constructor invocation) but assigned multiple times to other variables through copying. For each IntWrapper object, whether created through initialization or assignment, there is a corresponding call to the destructor (typically)....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-02-09 21:39:37 -0500 EST'>February 9, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Initialization is not assigment" href="https://sbidhya.github.io/posts/article-2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">About Me
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Hey there, I am Bidhya Nandan Sharma. I am a Software Engineer by profession and explorer by heart. What I love to explore is a mystery to myself!! My current goal is to get some familiarity with C&#43;&#43; systems programming as well as build fair bit of compilers expertise (specially ML Compilers). Starting small by writing my silly learnings. If it is useful to anyone of you, I will be very glad....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-02-09 21:38:36 -0500 EST'>February 9, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to About Me" href="https://sbidhya.github.io/posts/article-1/"></a>
+  <footer class="entry-footer"><span title='2024-02-09 21:39:37 -0500 EST'>February 9, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;432 words</footer>
+  <a class="entry-link" aria-label="post link to Initialization is not assigment" href="https://sbidhya.github.io/posts/article-1/"></a>
 </article>
     </main>
     

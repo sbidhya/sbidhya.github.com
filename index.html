@@ -74,7 +74,7 @@
   "description": "",
   "thumbnailUrl": "https://sbidhya.github.io/favicon.ico",
   "sameAs": [
-      
+      "https://www.linkedin.com/in/bidhyasharma/", "https://www.instagram.com/bidsharma/"
   ]
 }
 </script>
@@ -123,45 +123,53 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
+<main class="main"><div class="profile">
+    <div class="profile_inner">
+        <img draggable="false" src="https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/426078512_3645376475783237_2969373382647576400_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=efb6e6&amp;_nc_ohc=crSFqiCmWJMAX9XiLof&amp;_nc_ht=scontent-bos5-1.xx&amp;oh=00_AfBP4ZEtlsIocrQ4pPzJVNA9DjvRvy1JCmwmkWB8CXF-gg&amp;oe=65CB7B80" alt="Bidhya&#39;s profile pic" title="Bidhya&#39;s profile pic"
+            height="120" width="120" />
+        <h1>Bidhya N Sharma</h1>
+        <span>I am a Software Engineer currently working at Google.</span><div class="social-icons" >
+    <a href="https://www.linkedin.com/in/bidhyasharma/" target="_blank" rel="noopener noreferrer me"
+        title="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+    </a>
+    <a href="https://www.instagram.com/bidsharma/" target="_blank" rel="noopener noreferrer me"
+        title="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+</svg>
+    </a>
+</div>
 
-<article class="first-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Avoid Unintentional Copying in C&#43;&#43; Containers
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>C&#43;&#43; default semantics often involve copying, which can sometimes lead to unintended consequences. Let’s explore this through a practical example involving shared pointers.
-The Pitfall Consider the following scenario where we create a shared pointer to a set of strings:
-#include&lt;iostream&gt; #include&lt;set&gt; #include&lt;memory&gt; int main() { typedef std::set&lt;std::string&gt; STRINGSET; STRINGSET names = {&#34;Tom&#34;, &#34;Tim&#34;, &#34;Sam&#34;}; auto names_sptr = std::make_shared&lt;STRINGSET&gt;(names); { auto names_ptr_cpy = names_sptr; std::cout &lt;&lt; &#34;Share pointer use: &#34; &lt;&lt; names_sptr....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-02-09 21:41:16 -0500 EST'>February 9, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Avoid Unintentional Copying in C&#43;&#43; Containers" href="https://sbidhya.github.io/posts/article-3/"></a>
-</article>
+        <div class="buttons">
+            <a class="button" href="/posts" rel="noopener" title="Blogs">
+                <span class="button-inner">
+                    Blogs
+                </span>
+            </a>
+            <a class="button" href="https://github.com/sbidhya" rel="noopener" title="Github">
+                <span class="button-inner">
+                    Github&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Initialization is not assigment
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>In C&#43;&#43;, initialization and assignment are distinct operations. Through the code snippet below, we will explore these differences. While examining the code, one might initially assume that IntWrapper’s constructor and destructor are called an equal number of times. However, this is not the case. IntWrapper is initialized once (through constructor invocation) but assigned multiple times to other variables through copying. For each IntWrapper object, whether created through initialization or assignment, there is a corresponding call to the destructor (typically)....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-02-09 21:39:37 -0500 EST'>February 9, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Initialization is not assigment" href="https://sbidhya.github.io/posts/article-2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">About Me
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Hey there, I am Bidhya Nandan Sharma. I am a Software Engineer by profession and explorer by heart. What I love to explore is a mystery to myself!! My current goal is to get some familiarity with C&#43;&#43; systems programming as well as build fair bit of compilers expertise (specially ML Compilers). Starting small by writing my silly learnings. If it is useful to anyone of you, I will be very glad....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-02-09 21:38:36 -0500 EST'>February 9, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to About Me" href="https://sbidhya.github.io/posts/article-1/"></a>
-</article>
     </main>
     
 <footer class="footer">
