@@ -29,7 +29,7 @@ The Pitfall Consider the following scenario where we create a shared pointer to 
       <link>https://sbidhya.github.io/posts/article-1/</link>
       <pubDate>Fri, 09 Feb 2024 21:38:36 -0500</pubDate>
       <guid>https://sbidhya.github.io/posts/article-1/</guid>
-      <description>Hey there, I am Bidhya Nandan Sharma. I am a Software Engineer by profession and explorer by heart. What I love to explore is a mystery to myself!! My current goal to get some familiarity with C++ systems programming as well as build fair bit of compilers expertise (specially ML Compilers). Starting small by writing my silly learnings. If it is useful to anyone of you, I will be very glad.</description>
+      <description>Hey there, I am Bidhya Nandan Sharma. I am a Software Engineer by profession and explorer by heart. What I love to explore is a mystery to myself!! My current goal is to get some familiarity with C++ systems programming as well as build fair bit of compilers expertise (specially ML Compilers). Starting small by writing my silly learnings. If it is useful to anyone of you, I will be very glad.</description>
     </item>
   </channel>
 </rss>
