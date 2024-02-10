@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bidhya`s Post</title>
+    <link>https://sbidhya.github.io/</link>
+    <description>Recent content on Bidhya`s Post</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Feb 2024 21:41:16 -0500</lastBuildDate>
+    <atom:link href="https://sbidhya.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Avoid Unintentional Copying in C&#43;&#43; Containers</title>
+      <link>https://sbidhya.github.io/posts/article-3/</link>
+      <pubDate>Fri, 09 Feb 2024 21:41:16 -0500</pubDate>
+      <guid>https://sbidhya.github.io/posts/article-3/</guid>
+      <description>C++ default semantics often involve copying, which can sometimes lead to unintended consequences. Let&amp;rsquo;s explore this through a practical example involving shared pointers.
+The Pitfall Consider the following scenario where we create a shared pointer to a set of strings:
+#include&amp;lt;iostream&amp;gt; #include&amp;lt;set&amp;gt; #include&amp;lt;memory&amp;gt; int main() { typedef std::set&amp;lt;std::string&amp;gt; STRINGSET; STRINGSET names = {&amp;#34;Tom&amp;#34;, &amp;#34;Tim&amp;#34;, &amp;#34;Sam&amp;#34;}; auto names_sptr = std::make_shared&amp;lt;STRINGSET&amp;gt;(names); { auto names_ptr_cpy = names_sptr; std::cout &amp;lt;&amp;lt; &amp;#34;Share pointer use: &amp;#34; &amp;lt;&amp;lt; names_sptr.</description>
+    </item>
+    <item>
+      <title>Initialization is not assigment</title>
+      <link>https://sbidhya.github.io/posts/article-2/</link>
+      <pubDate>Fri, 09 Feb 2024 21:39:37 -0500</pubDate>
+      <guid>https://sbidhya.github.io/posts/article-2/</guid>
+      <description>In C++, initialization and assignment are distinct operations. Through the code snippet below, we will explore these differences. While examining the code, one might initially assume that IntWrapper&amp;rsquo;s constructor and destructor are called an equal number of times. However, this is not the case. IntWrapper is initialized once (through constructor invocation) but assigned multiple times to other variables through copying. For each IntWrapper object, whether created through initialization or assignment, there is a corresponding call to the destructor (typically).</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://sbidhya.github.io/posts/article-1/</link>
+      <pubDate>Fri, 09 Feb 2024 21:38:36 -0500</pubDate>
+      <guid>https://sbidhya.github.io/posts/article-1/</guid>
+      <description>Hey there, I am Bidhya Nandan Sharma. I am a Software Engineer by profession and explorer by heart. What I love to explore is a mystery to myself!! My current goal to get some familiarity with C++ systems programming as well as build fair bit of compilers expertise (specially ML Compilers). Starting small by writing my silly learnings. If it is useful to anyone of you, I will be very glad.</description>
+    </item>
+  </channel>
+</rss>
