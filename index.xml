@@ -6,8 +6,16 @@
     <description>Recent content on Bidhya`s Post</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Feb 2024 21:41:16 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2024 11:36:24 -0500</lastBuildDate>
     <atom:link href="https://sbidhya.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prefer initializer list for variable initliazation</title>
+      <link>https://sbidhya.github.io/posts/article-3/</link>
+      <pubDate>Sat, 10 Feb 2024 11:36:24 -0500</pubDate>
+      <guid>https://sbidhya.github.io/posts/article-3/</guid>
+      <description>Implicit conversion is a convenience that C++ offers to programmers. However, sometimes this can cause unexpected results. It is always a good rule of thumb to be explicit when expressing your intent. The following code snippet demonstrates how implicit conversion (both narrowing and widening) can be useful and can avoid casting between data types manually.
+#include&amp;lt;iostream&amp;gt; int main() { int num = 10.2; // Implicitly converts float to num which is fine at the cost of loosing precision float radius = 10; // Implicity converts int to float.</description>
+    </item>
     <item>
       <title>Avoid Unintentional Copying in C&#43;&#43; Containers</title>
       <link>https://sbidhya.github.io/posts/article-2/</link>
